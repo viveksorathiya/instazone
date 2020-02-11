@@ -1,0 +1,88 @@
+.horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid $light-grey;
+    &:last-child {
+      border: 0;
+    }
+    @include breakpoint("phone-tablet") {
+      border-bottom: 0;
+    }
+    .column {
+      display: flex;
+      align-items: center;
+      .user {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        .username {
+          font-weight: 600;
+          display: block;
+          margin-bottom: 3px;
+        }
+        .name {
+          color: $dark-grey;
+        }
+      }
+      .bigAvatar {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+      }
+      .profile-image {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+      .button {
+        @include blueButton();
+      }
+    }
+  }
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  width: 30%;
+  max-width: $normal-card-width;
+  @include boxBorder(no);
+  background-color: white;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-right: 28px;
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .profile-image {
+      width: 78px;
+      height: 78px;
+      border-radius: 50%;
+      margin-bottom: 12px;
+    }
+    .user {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 12px;
+      .username {
+        font-weight: 600;
+        display: block;
+        margin-bottom: 3px;
+      }
+      .name {
+        color: $dark-grey;
+      }
+    }
+    .button {
+      @include blueButton();
+    }
+  }
+}
