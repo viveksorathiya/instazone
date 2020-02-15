@@ -70,7 +70,7 @@
     "webpack-dev-server": "3.1.9",
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "3.6.3",
-    "yarn": "^1.21.1"
+    "yarn": "^1.22.0"
   },
   "scripts": {
     "start": "HTTPS=true node scripts/start.js",
